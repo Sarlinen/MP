@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio player HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+    <style>
+
+    #player{
+        position: relative;
+        max-width: 700px;
+        height: 500px;
+        border: solid 1px gray;
+    }
+    </style>
+  </head>
+
+  <body>
+      <!-- Audio player container-->
+     <div id='player'></div>
+
+    <!-- Audio player js begin-->
+    <script src="js/AudioPlayer.js"></script>
+
+    <script>
+        // test image for web notifications
+        var iconImage = null;
+
+        AP.init({
+            container:'#player',//a string containing one CSS selector
+            volume   : 0.5,
+            autoPlay : true,
+            notification: true,
+            playList: [
+                {'icon': 'https://i.imgur.com/TIfXdry.png', 'title': '[RJ146622] Lavender Succubus Perfume kiss', 'file': 'https://link.storjshare.io/ju5z45jz5vqz2h7ztmmc2qektqoa/asmr%2FRJ146622.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/D4d9EFZ.jpeg', 'title': '[RJ234821] Eternal Orgasm in Harem Part1', 'file': 'https://link.storjshare.io/jvgzgg5nmdyepe5ljrx4tw4yhb5a/asmr%2FRJ234821.Part1.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/D4d9EFZ.jpeg', 'title': '[RJ234821] Eternal Orgasm in Harem Part2', 'file': 'https://link.storjshare.io/jwp6s7g6ucaaxiujni3rfnev4lga/asmr%2FRJ234821.Part2.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/dAgQGtz.png', 'title': '[RJ245694] Hero Persuasion Project ~The Witches\' Heart-Melting Kiss~', 'file': 'https://link.storjshare.io/jxfxbxkx5m7pusaymqzz5tmdnblq/asmr%2FRJ245694.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/hT3hHFm.png', 'title': '[RJ281339] Money-sucking Full Course Fellatio', 'file': 'https://link.storjshare.io/ju5pyotc5n55sa2dpdjdrmautyfa/asmr%2FRJ281339.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/CkPfKsl.png', 'title': '[RJ285720] Gulp \'n\' Blow Succubus', 'file': 'https://link.storjshare.io/jx54rj2y5sgjckathspns2cg7w3q/asmr%2FRJ285720.mp3?download=1'},
+                {'icon': 'https://i.imgur.com/vljHJ65.jpeg', 'title': '[RJ420050] 털털한 소꿉친구(현여친!)와의 첫 섹스 해금일!', 'file': 'https://link.storjshare.io/jvfvphcuazkq7eopff53xkovkwlq/asmr%2FRJ420050.mp3?download=1'},
+          ]
+        });
+    </script>
+    <!-- Audio player js end-->
+	</br></br>
+	이 서비스는 StroJ를 이용합니다. 트래픽 비용을 충당하기 위해 기부를 받고 있습니다. (1TB Traffic = 7$/1mo)
+  </body>
+</html>
+

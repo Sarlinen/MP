@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio player HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+    <style>
+
+    #player{
+        position: relative;
+        max-width: 700px;
+        height: 500px;
+        border: solid 1px gray;
+    }
+    </style>
+  </head>
+
+  <body>
+      <!-- Audio player container-->
+     <div id='player'></div>
+
+    <!-- Audio player js begin-->
+    <script src="./js/AudioPlayer.js"></script>
+
+    <script>
+        // test image for web notifications
+        var iconImage = null;
+
+        AP.init({
+            container:'#player',//a string containing one CSS selector
+            volume   : 0.5,
+            autoPlay : true,
+            notification: true,
+            playList: [
+                {'icon': 'https://img.youtube.com/vi/D_qiWvjJ3kk/maxresdefault.jpg', 'title': '[Library Of Ruina] Gone Angels', 'file': 'https://link.storjshare.io/jwy6furakdnket5aazmgfhdolx7q/music01%2F%5B%20Library%20Of%20Ruina%20%5D%20Gone%20Angels%20%5BD_qiWvjJ3kk%5D.mp3?download=1'},
+                {'icon':'https://img.youtube.com/vi/JdrJxsiA7e4/maxresdefault.jpg' , 'title': '[Touhou Arrange] 삼라만상 - 삼요정 SAY YA!', 'file': 'https://link.storjshare.io/jxxhhgjukvz3movj6luf5tyvg62q/music01%2F%5B%EB%8F%99%EB%B0%A9%20%EC%96%B4%EB%A0%88%EC%9D%B8%EC%A7%80%5D%20%EC%82%BC%EB%9D%BC%EB%A7%8C%EC%83%81%20-%20%EC%82%BC%EC%9A%94%EC%A0%95%20SAY%20YA!%20%5B%EC%9E%90%EB%A7%89%5D.m4a?download=1'}
+          ]
+        });
+    </script>
+    <!-- Audio player js end-->
+  </body>
+</html>
